@@ -75,8 +75,8 @@ TinyAnim.init(
 * **animationObject**: The JSON object which describes the animation
 * **containerID**: A string with the ID of the container element
 * **options**:
-  * **playback**: (string) play_once(*default*), play_forever, play_n_times
-  * **loopcount**: (int) count — Number times to play if play_n_times was specified
+  * **playback**: (_String_) play_once(*default*), play_forever, play_n_times
+  * **loopcount**: (_Int_) count — Number times to play if play_n_times was specified
 
 `TinyAnim.play() — Starts playing the current animation.`
 
@@ -106,9 +106,17 @@ The JSON format is fairly straightforward (I believe), at it's top level we set 
 
 ####Animation object
 
-* **length**: (*Int) The length of the animation, in frames.
-* **fps**: (*Int) The speed at which the animation will playback. Although TinyAnim will update the animation as quickly as it can it will still respect the fps setting, so a 60 frame animation will last 1 second at 60fps, 2 seconds at 30fps and so on. Even at low framerates the timing will be correct; but the animation will still be smooth since positions are interpolated between frames as quickly as your browser can request them.
-* **elements**: (*Array) An array of element objects which describe the animation and content that will make up the animation
+* **length**: (_Int_) The length of the animation, in frames.
+* **fps**: (_Int_) The speed at which the animation will playback. Although TinyAnim will update the animation as quickly as it can it will still respect the fps setting, so a 60 frame animation will last 1 second at 60fps, 2 seconds at 30fps and so on. Even at low framerates the timing will be correct; but the animation will still be smooth since positions are interpolated between frames as quickly as your browser can request them.
+* **elements**: (_Array_) An array of element objects which describe the animation and content that will make up the animation
 
 ####Element object
 
+* **name**: (_String_)
+* **parentName**: (_String_)
+* **defaultLeft**: (_Int_)
+* **defaultTop**: (_Int_)
+* **defaultOpacity**: (_Float_)
+* **zindex**: (_Int_)
+* **content**: (_String_)
+* **keys**: (_Array_)
