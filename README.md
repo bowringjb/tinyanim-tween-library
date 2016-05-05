@@ -13,7 +13,7 @@ A minuscule (8kb) Javascript tweening library which describes animations using a
 - Commercially available WYSIWYG editor for building complex animations. Available [here](http://tinyanim.com)
 
 ##Installation
-Download the zip file and link to tinyanim.min.js or tinyanim.js file like so:
+Download the zip file and link to `tinyanim.js` or `tinyanim.min.js` file like so:
 
 ```html
 <script src="../../js/tinyanim.min.js"></script>
