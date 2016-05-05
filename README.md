@@ -78,6 +78,12 @@ TinyAnim.init(
   * **playback**: (string) play_once(*default*), play_forever, play_n_times
   * **loopcount**: (int) count — Number times to play if play_n_times was specified
 
+`TinyAnim.play() — Starts playing the current animation.`
+
+`TinyAnim.stop() — Stops playback.`
+
+`TinyAnim.seek(frame) — Seeks the specified frame of the animation (dependent on fps settings).`
+
 ##Callbacks
 
 TinyAnim has callbacks for when the animation advances and ends, you can tap into them like so:
