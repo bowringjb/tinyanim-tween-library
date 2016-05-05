@@ -16,5 +16,5 @@ A minuscule (8kb) Javascript tweening library which describes animations using a
 Download the zip file and link to `tinyanim.js` or `tinyanim.min.js` file like so:
 
 ```html
-<script src="../../js/tinyanim.min.js"></script>
+<script src="js/tinyanim.min.js"></script>
 ````
