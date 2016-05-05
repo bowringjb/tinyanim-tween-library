@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>A sample project name</title>
+		<script src="../../js/tinyanim.min.js"></script>
+		<style>
+			.ill-anim-element {
+				position:absolute;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="Content" style="position:relative; width:300px; height:250px; overflow:hidden">
+        </div>
+		<script>
+			var theAnimation = {
+				"length":180,
+				"fps":60,
+				"stageWidth":300,
+				"stageHeight":250,
+				"currentTime":0,
+				"elements":
+				[
+					{
+						"name":"SimpleBox",
+						"parent":null,
+						"defaultLeft":0,
+						"defaultTop":0,
+						"defaultOpacity":1,
+						"zindex":"0",
+						"content":'<div style="width:20px; height:20px; background-color:#ff0055"></div>',
+						"keys":
+						[
+							{
+								"channel":"xposition",
+								"keys":
+								[
+									{
+										"time":0,
+										"value":0,
+										"easing":"bounce"
+									},
+									{
+										"time":90,
+										"value":280,
+										"easing":"bounce"
+									},
+									{
+										"time":180,
+										"value":0,
+										"easing":"bounce"
+									}
+								]
+							}
+						]
+					}
+				]
+			};
+
+			TinyAnim.init(
+				theAnimation,
+				"Content",
+				{
+					"playback":"play_forever",
+					"loopcount":"3"
+				}
+			);
+
+			TinyAnim.play();
+		</script>
+	</body>
+</html>

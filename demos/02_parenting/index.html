@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>A sample project name</title>
+		<script src="../../js/tinyanim.js"></script>
+		<style>
+			.ill-anim-element {
+				position:absolute;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="Content" style="position:relative; width:300px; height:250px; overflow:hidden">
+        </div>
+		<script>
+			var theAnimation = {
+				"length":240,
+				"fps":60,
+				"stageWidth":300,
+				"stageHeight":250,
+				"currentTime":0,
+				"elements":
+				[
+					{
+						"name":"SimpleBox",
+						"defaultLeft":140,
+						"defaultTop":115,
+						"defaultOpacity":1,
+						"zindex":"0",
+						"content":'<div style="width:20px; height:20px; background-color:#ff0055"></div>',
+						"keys":
+						[
+							{
+								"channel":"rotation",
+								"keys":
+								[
+									{
+										"time":0,
+										"value":0,
+										"easing":"linear"
+									},
+									{
+										"time":240,
+										"value":359,
+										"easing":"linear"
+									}
+								]
+							}
+						]
+					},
+					{
+						"name":"SimpleBox2",
+						"parentName":"SimpleBox",
+						"defaultLeft":100,
+						"defaultTop":0,
+						"defaultOpacity":1,
+						"zindex":"0",
+						"content":'<div style="width:20px; height:20px; background-color:#00ff55"></div>',
+						"keys":
+						[
+							{
+								"channel":"rotation",
+								"keys":
+								[
+									{
+										"time":0,
+										"value":0,
+										"easing":"linear"
+									},
+									{
+										"time":240,
+										"value":719,
+										"easing":"linear"
+									}
+								]
+							}
+						]
+					},
+					{
+						"name":"SimpleBox3",
+						"parentName":"SimpleBox2",
+						"defaultLeft":50,
+						"defaultTop":0,
+						"defaultOpacity":1,
+						"zindex":"0",
+						"content":'<div style="width:10px; height:10px; background-color:#0055ff"></div>',
+						"keys":
+						[
+							{
+								"channel":"rotation",
+								"keys":
+								[
+									{
+										"time":0,
+										"value":0,
+										"easing":"linear"
+									},
+									{
+										"time":240,
+										"value":359,
+										"easing":"linear"
+									}
+								]
+							}
+						]
+					}
+				]
+			};
+
+			TinyAnim.init(
+				theAnimation,
+				"Content",
+				{
+					"playback":"play_forever",
+					"loopcount":"3"
+				}
+			);
+
+			TinyAnim.play();
+		</script>
+	</body>
+</html>
