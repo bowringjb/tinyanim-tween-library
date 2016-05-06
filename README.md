@@ -4,7 +4,7 @@ A super tiny (8kb) yet comprehensive JavaScript tweening library which describes
 
 Perfect for animated banners and projects where space is at a premium, this runtime is the foundation of our animation editor TinyAnim™, which allows code-free animating and exporting.
 
-For more on the TinyAnim app click [here](http://tinyanim.com) or to buy…
+For more on the TinyAnim™ app click [here](http://tinyanim.com) or to buy…
 
 [<img src="http://tinyanim.com/images/app-store32.png"  height="24">](https://itunes.apple.com/us/app/tiny-anim/id1074795837?ls=1&mt=12 )
 
