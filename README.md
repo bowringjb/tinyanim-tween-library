@@ -56,7 +56,7 @@ var theAnimation = {
 
 Along with setting the animation length and fps the animation object should contain an array of elements which you wish to animate. The elements contain channel objects which should contain a label for the target channel and a further sub array of actual keyframes and their data. The elements content property contains the actual html you wish to present on stage.
 
-After you have defined your animation you need to provide an element into which the animation can be rendered. At the moment you must specify the container as a string containing the elements id, so an example container may look like this:
+After you have defined your animation you need to provide an element into which the animation can be rendered. At the moment you must specify the container as a string containing the element's id. So an example container may look like this:
 
 ```html
 <div id="Content" style="position:relative; width:300px; height:250px; overflow:hidden">
