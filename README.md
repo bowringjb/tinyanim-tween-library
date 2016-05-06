@@ -75,7 +75,7 @@ TinyAnim.init(
 );
 ```
 
-##The TinyAnim object
+##The TinyAnim™ object
 
 `TinyAnim.init( animationObject, containerID, options )`
 
@@ -93,7 +93,7 @@ TinyAnim.init(
 
 ##Callbacks
 
-TinyAnim has callbacks for when the animation advances and ends, you can tap into them like so:
+TinyAnim™ has callbacks for when the animation advances and ends, you can tap into them like so:
 
 ```html
 TinyAnim.onAdvanceFrame = function() {
