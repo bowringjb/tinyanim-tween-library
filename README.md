@@ -1,7 +1,8 @@
 # TinyAnim™ Tween library
 
 A super tiny (8kb) yet comprehensive JavaScript tweening library which describes animations using an easy-to-read and edit JSON format.
-Perfect for animated banners and anywhere that space is at a premium, this runtime is the foundation of our animation editor TinyAnim™, which allows code-free animating and exporting.
+
+Perfect for animated banners and projects where space is at a premium, this runtime is the foundation of our animation editor TinyAnim™, which allows code-free animating and exporting.
 
 For more on the TinyAnim app click [here](http://tinyanim.com) or 
 
