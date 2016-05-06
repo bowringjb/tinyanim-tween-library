@@ -137,4 +137,4 @@ The JSON format is fairly straightforward (I believe). At its top level we set t
 
 * **time**: (_int_) The time for this keyframe. **Note: Keyframes must be placed so their time value is always increasing, i.e. time must always run forward since the key array is not automatically sorted.*
 * **value**: (_mixed_) The value for the channel being animated, usually a float but can be an object for compound keyframes (for example, scale takes values for both width and height as follows: `"value":{x:1,y:1}`).
-* **easing**: (_string_) Valid options are _linear_, _ease-out_, _ease-in_, _bounce_.
+* **easing**: (_string_) Valid options are _linear_, _ease-out_, _ease-in_ and _bounce_.
