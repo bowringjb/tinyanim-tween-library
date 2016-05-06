@@ -11,7 +11,7 @@ For more on the TinyAnim app click [here](http://tinyanim.com) or to buy…
 ##Features
 - Minuscule runtime (8kb) with no dependencies, perfect for banners.
 - Easy to understand JSON markup format.
-- Out of the box support for Translation, Rotation, Scaling and Opacity (with vendor prefixes applied automatically where required).
+- Out-of-the-box support for Translation, Rotation, Scaling and Opacity (with vendor prefixes applied automatically where required).
 - Easing options: Linear, Ease-In, Ease-Out, Bounce.
 - Looping options: Play Forever, Play Once, Loop n Times.
 - Parent elements to other elements to build complex hierarchies.
