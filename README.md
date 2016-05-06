@@ -62,7 +62,7 @@ After you have defined your animation you need to provide an element into which 
 <div id="Content" style="position:relative; width:300px; height:250px; overflow:hidden">
 ```
 
-Once the JSON object and the container have been prepared you can play the animation like so:
+Once the JSON object and the container have been prepared, you can play the animation like so:
 
 ```html
 TinyAnim.init(
