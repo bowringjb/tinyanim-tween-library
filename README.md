@@ -27,7 +27,7 @@ Download the zip file and link to `tinyanim.js` or `tinyanim.min.js` file like s
 ````
 
 ##Basic usage
-To create an animation you need to describe it as a JSON object in your script, the following object will create a small square which bounces from left to right:
+To create an animation you need to describe it as a JSON object in your script. The following object will create a small square which bounces from left to right:
 
 ```
 var theAnimation = {
