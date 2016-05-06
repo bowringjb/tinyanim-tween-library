@@ -93,7 +93,7 @@ TinyAnim.init(
 
 ##Callbacks
 
-TinyAnim™ has callbacks for when the animation advances and ends, you can tap into them like so:
+TinyAnim™ has callbacks for when the animation advances and ends. You can tap into them like so:
 
 ```html
 TinyAnim.onAdvanceFrame = function() {
@@ -114,7 +114,7 @@ The JSON format is fairly straightforward (I believe), at it's top level we set 
 ####Animation object
 
 * **length**: (_Int_) The length of the animation, in frames.
-* **fps**: (_Int_) The speed at which the animation will playback. Although TinyAnim will update the animation as quickly as it can it will still respect the fps setting, so a 60 frame animation will last 1 second at 60fps, 2 seconds at 30fps and so on. Even at low framerates the timing will be correct; but the animation will still be smooth since positions are interpolated between frames as quickly as your browser can request them.
+* **fps**: (_Int_) The speed at which the animation will playback. Although TinyAnim™ will update the animation as quickly as it can it will still respect the fps setting, so a 60 frame animation will last 1 second at 60fps, 2 seconds at 30fps and so on. Even at low framerates the timing will be correct; but the animation will still be smooth since positions are interpolated between frames as quickly as your browser can request them.
 * **elements**: (_Array_) An array of element objects which describe the animation and content that will make up the animation
 
 ####Element object
