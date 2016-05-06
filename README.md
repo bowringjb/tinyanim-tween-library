@@ -112,11 +112,20 @@ The JSON format is fairly straightforward (I believe), at it's top level we set 
 
 ####Element object
 
-* **name**: (_String_)
-* **parentName**: (_String_)
-* **defaultLeft**: (_Int_)
-* **defaultTop**: (_Int_)
-* **defaultOpacity**: (_Float_)
-* **zindex**: (_Int_)
-* **content**: (_String_)
-* **keys**: (_Array_)
+* **name**: (_String_) An identifier applied to the element as the name attribute
+* **parentName**: (_String_) _Optional_, Accepts the name of another element to which this element will be parented. 
+* **defaultLeft**: (_Int_) _Optional_, The default left position of the element when no keys are present.
+* **defaultTop**: (_Int_) _Optional_, The default top position of the element when no keys are present.
+* **defaultOpacity**: (_Float_) _Optional_, The default opacity of the element when no keys are present.
+* **zindex**: (_Int_) _Optional_, The Z-Index of this element.
+* **content**: (_String_), The HTML content that is to be displayed in the element.
+* **keys**: (_Array_), An array of channel objects which describes the elements animation.
+
+###Channel object
+
+* **channel**: (_String_) Valid options are _opacity_, _xposition_, _yposition_, _rotation_, and _scale_.
+* **keys**: (_Array_) An array of keyframe objects.
+
+###Keyframe object
+
+* **time**: (_int_) The time for this keyframe. **Note: Keyframes must be placed so their time value is always increasing, i.e. time must always run forward since the key array is not automatically sorted.*
