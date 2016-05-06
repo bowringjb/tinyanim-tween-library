@@ -114,19 +114,19 @@ The JSON format is fairly straightforward (I believe). At its top level we set t
 ####Animation object
 
 * **length**: (_Int_) The length of the animation, in frames.
-* **fps**: (_Int_) The speed at which the animation will playback. Although TinyAnim™ will update the animation as quickly as it can it will still respect the fps setting, so a 60 frame animation will last 1 second at 60fps, 2 seconds at 30fps and so on. Even at low framerates the timing will be correct; but the animation will still be smooth since positions are interpolated between frames as quickly as your browser can request them.
-* **elements**: (_Array_) An array of element objects which describe the animation and content that will make up the animation
+* **fps**: (_Int_) The speed at which the animation will playback. Although TinyAnim™ will update the animation as quickly as it can, it will still respect the fps setting, so a 60-frame animation will last 1 second at 60fps, 2 seconds at 30fps and so on. Even at low framerates the timing will be correct, but the animation will still be smooth since positions are interpolated between frames as quickly as your browser can request them.
+* **elements**: (_Array_) An array of element objects which describe the animation and content that will make up the animation.
 
 ####Element object
 
-* **name**: (_String_) An identifier applied to the element as the name attribute
+* **name**: (_String_) An identifier applied to the element as the name attribute.
 * **parentName**: (_String_) _Optional_, Accepts the name of another element to which this element will be parented. 
 * **defaultLeft**: (_Int_) _Optional_, The default left position of the element when no keys are present.
 * **defaultTop**: (_Int_) _Optional_, The default top position of the element when no keys are present.
 * **defaultOpacity**: (_Float_) _Optional_, The default opacity of the element when no keys are present.
 * **zindex**: (_Int_) _Optional_, The Z-Index of this element.
 * **content**: (_String_), The HTML content that is to be displayed in the element.
-* **keys**: (_Array_), An array of channel objects which describes the elements animation.
+* **keys**: (_Array_), An array of channel objects which describe the element's animation.
 
 ###Channel object
 
@@ -136,5 +136,5 @@ The JSON format is fairly straightforward (I believe). At its top level we set t
 ###Keyframe object
 
 * **time**: (_int_) The time for this keyframe. **Note: Keyframes must be placed so their time value is always increasing, i.e. time must always run forward since the key array is not automatically sorted.*
-* **value**: (_mixed_) The value for the channel being animated, usually a float but can be an object for compund keyframes (for example, scale takes values for both width and height as follows: `"value":{x:1,y:1}`)
+* **value**: (_mixed_) The value for the channel being animated, usually a float but can be an object for compound keyframes (for example, scale takes values for both width and height as follows: `"value":{x:1,y:1}`)
 * **easing**: (_string_) Valid options are _linear_, _ease-out_, _ease-in_, _bounce_
