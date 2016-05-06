@@ -1,4 +1,4 @@
-# TinyAnim™-tween-library
+# TinyAnim™ Tween library
 A minuscule (8kb) Javascript tweening library which describes animations using an easy to read and edit JSON format. Integrates perfectly with our commercially available WYSIWYG editor [TinyAnim](http://tinyanim.com) to allow code free animating and exporting, or can be used alone by writing the JSON by hand.
 
 ##Features
