@@ -109,7 +109,7 @@ TinyAnim.onAnimationComplete = function() {
 
 ##Animation format
 
-The JSON format is fairly straightforward (I believe), at its top level we set the basic animation parameters.
+The JSON format is fairly straightforward (I believe). At its top level we set the basic animation parameters.
 
 ####Animation object
 
