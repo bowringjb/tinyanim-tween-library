@@ -9,7 +9,7 @@ For more on the TinyAnim™ app click [here](http://tinyanim.com) or to buy…
 [<img src="http://tinyanim.com/images/app-store32.png"  height="24">](https://itunes.apple.com/us/app/tiny-anim/id1074795837?ls=1&mt=12 )
 
 ##Features
-- Minuscule runtime (8kb) with no dependencies, perfect for banners.
+- Tiny runtime (8kb) with no dependencies, perfect for banners.
 - Easy to understand JSON markup format.
 - Out-of-the-box support for Translation, Rotation, Scaling and Opacity (with vendor prefixes applied automatically where required).
 - Easing options: Linear, Ease-In, Ease-Out, Bounce.
